@@ -1,0 +1,42 @@
+<div class="contact-container">
+    <div class="contact-title">
+        <h3>Contact</h3>
+    </div>
+    <div class="contact-page">
+        <div fxLayoutGap="15px" class="contact" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="row" fxLayoutAlign="center start">
+            <div fxFlex="30%" class="contact-text">
+                <h3>Let's talk about everything!</h3>
+                <p>Don't like forms? Send me an <a href="http://">email</a>. 👋</p>
+            </div>
+            <div fxFlex="80%" class="contact-form">
+                <div class="container-form">
+                    <form class="form" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="15px" action="">
+                        <div class="form-input">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Email Address</mat-label>
+                                <input matInput [(ngModel)]="email" type="email" name="email">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-input">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Subject</mat-label>
+                                <input matInput [(ngModel)]="subject" name="subject">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-input">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Message</mat-label>
+                                <input matInput [(ngModel)]="message" name="message">
+                            </mat-form-field>
+                        </div>
+                        <div style="cursor:pointer" class="btn-here" (click)="sendEmail()">
+                            <a class="btn-home">
+                                Send Message
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

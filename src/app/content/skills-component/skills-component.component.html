@@ -1,0 +1,56 @@
+<div class="skills-container">
+    <div class="skills-judul">
+        <h3>Skills</h3>
+    </div>
+    <div class="skills-box" fxLayout.xs="column" fxLayout="row" fxLayoutAlign="space-between none">
+        <mat-list class="skills-list" role="list">
+            <div mat-subheader class="skills-subheader">
+                <p>Soft Skills</p>
+            </div>
+            <mat-list-item class="skills-list-item" fxLayout="row" fxLayoutAlign=" center" *ngFor="let skill of softSkills">
+                <mat-icon matListItemIcon class="list-icon">fiber_manual_record</mat-icon>
+                <div matListItemTitle class="list-skill">{{skill.nama}}</div>
+            </mat-list-item>
+            <div mat-subheader class="skills-subheader">
+                <p>Hard Skills</p>
+            </div>
+            <mat-list-item class="skills-list-item" fxLayout="row" fxLayoutAlign=" center" *ngFor="let skill of hardSkills">
+                <mat-icon matListItemIcon class="list-icon">fiber_manual_record</mat-icon>
+                <div matListItemTitle class="list-skill">{{skill.nama}}</div>
+            </mat-list-item>
+        </mat-list>
+        <mat-list class="skills-list" role="list">
+            <div mat-subheader class="skills-subheader">
+                <p>UI/UX Design</p>
+            </div>
+            <mat-list-item class="skills-list-item" fxLayout="row" fxLayoutAlign=" center" *ngFor="let skill of UIUX">
+                <mat-icon matListItemIcon class="list-icon">fiber_manual_record</mat-icon>
+                <div matListItemTitle class="list-skill">{{skill.nama}}</div>
+            </mat-list-item>
+            <div mat-subheader class="skills-subheader">
+                <p>Graphic Design</p>
+            </div>
+            <mat-list-item class="skills-list-item" fxLayout="row" fxLayoutAlign=" center" *ngFor="let skill of GraphicDesign">
+                <mat-icon matListItemIcon class="list-icon">fiber_manual_record</mat-icon>
+                <div matListItemTitle class="list-skill">{{skill.nama}}</div>
+            </mat-list-item>
+            <div mat-subheader class="skills-subheader">
+                <p>Essential Software</p>
+            </div>
+            <mat-list-item class="skills-list-item" fxLayout="row" fxLayoutAlign=" center" *ngFor="let skill of ESoftware">
+                <mat-icon matListItemIcon class="list-icon">fiber_manual_record</mat-icon>
+                <div matListItemTitle class="list-skill">{{skill.nama}}</div>
+            </mat-list-item>
+        </mat-list>
+        <mat-list class="skills-list" role="list">
+            <div mat-subheader class="skills-subheader">
+                <p>Programming & Development</p>
+            </div>
+            <mat-list-item class="skills-list-item" fxLayout="row" fxLayoutAlign=" center" *ngFor="let skill of Programming">
+                <mat-icon matListItemIcon class="list-icon">fiber_manual_record</mat-icon>
+                <div matListItemTitle class="list-skill">{{skill.nama}}</div>
+            </mat-list-item>
+        </mat-list>
+
+    </div>
+</div>

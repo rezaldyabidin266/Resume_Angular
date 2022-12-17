@@ -1,0 +1,73 @@
+.home-container {
+    width: 100%;
+    height: 100%;
+    //background: var(--warna-gelap);
+    background-image: url('../../../assets/image/gelombangi.svg');
+    background-size: cover;
+    .home-header {
+        height: 100%;
+        text-align: center;
+        color: var(--warna-putih);
+        .card-home {
+            margin-top: -30px;
+            .card-img-avatar {
+                img {
+                    border: 3px solid var(--warna-putih);
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                }
+                margin-bottom: 1.5rem;
+            }
+            .card-nama {
+                h3 {
+                    font-family: var(--rubik);
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+            }
+            .card-subnama {
+                h4 {
+                    font-weight: 400;
+                    font-size: 16px;
+                    font-family: var(--rubik);
+                }
+                margin-bottom: 1.8rem;
+            }
+            .card-icon {
+                .card-icon-list {
+                    a {
+                        color: var(--warna-putih);
+                        i {
+                            font-weight: 400;
+                            font-size: 21px;
+                        }
+                        &:hover {
+                            color: var(--warna-abu);
+                        }
+                    }
+                }
+                margin-bottom: 1.5rem;
+            }
+            .btn-here {
+                margin-top: 2.5rem;
+                .btn-home {
+                    color: var(--warna-putih);
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    overflow: hidden;
+                    line-height: 1;
+                    background: var(--warna-abu);
+                    padding: 10px 32px;
+                    border-radius: 30px;
+                    &:hover {
+                        background: var(--warna-putih);
+                        color: var(--warna-abu);
+                    }
+                }
+            }
+        }
+    }
+}

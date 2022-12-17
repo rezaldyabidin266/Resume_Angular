@@ -1,0 +1,45 @@
+.navbar-container {
+    background-color: var(--warna-gelap);
+    height: 100%;
+    width: 100%;
+    .navbar-logo {
+        .img-wrap {
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 170px;
+            }
+        }
+    }
+    .navbar-menu {
+        margin-top: 2rem;
+        .list-menu {
+            background-color: transparent;
+            .ul-menu {
+                margin-left: 1.7rem;
+                .btn-menu {
+                    .text-menu {
+                        color: var(--warna-putih);
+                        .nav-icon {
+                            margin-right: 15px;
+                            color: var(--warna-abu);
+                        }
+                        &:hover {
+                            color: var(--warna-abu);
+                        }
+                    }
+                }
+                .active-color {
+                    color: red;
+                }
+            }
+        }
+    }
+    .copy-right {
+        margin-left: 1.7rem;
+        color: var(--warna-putih);
+        position: absolute;
+        bottom: 2rem;
+    }
+}

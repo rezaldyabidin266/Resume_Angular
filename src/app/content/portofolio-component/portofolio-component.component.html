@@ -1,0 +1,59 @@
+<div class="portofolio-container">
+    <div class="portofolio-title">
+        <h3>Portfolio</h3>
+    </div>
+    <div class="portofolio-page">
+        <mat-grid-list class="portofolio-grid" (window:resize)="onResize($event)" gutterSize="15px" [cols]="breakpoint" rowHeight="158px" rowWidth="100%">
+            <mat-grid-tile (click)="goPorto('HTTPS://BOGORSTUDIO.COM/')" class="grid-item">
+                <mat-card class="card">
+                    <mat-card-content class="card-content bogor-studio">
+                        <!-- <img src="assets/image/portfolio/BogorStudioMockup.webp" alt=""> -->
+                        <div class="middle">
+                            <i class="far fa-external-link"></i>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile (click)="goPorto('https://admin.loker.esbrasilonline.com/')" class="grid-item">
+                <mat-card class="card">
+                    <mat-card-content class="card-content admin-loker">
+                        <!-- <img src="assets/image/portfolio/AdminLoker.webp" alt=""> -->
+                        <div class="middle">
+                            <i class="far fa-external-link"></i>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile (click)="goPorto('https://loker.esbrasilonline.com/#/loker')" class="grid-item">
+                <mat-card class="card">
+                    <mat-card-content class="card-content loker">
+                        <!-- <img src="assets/image/portfolio/Loker.webp" alt=""> -->
+                        <div class="middle">
+                            <i class="far fa-external-link"></i>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile (click)="goPorto('https://esbrasilonline.com/')" class="grid-item">
+                <mat-card class="card">
+                    <mat-card-content class="card-content es-brasil">
+                        <!-- <img src="assets/image/portfolio/EsBrasil.webp" alt=""> -->
+                        <div class="middle">
+                            <i class="far fa-external-link"></i>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile class="grid-item">
+                <mat-card class="card">
+                    <mat-card-content class="card-content">
+                        <div fxLayout="row" fxLayoutAlign="center center" class="comingsoon">
+                            <p>BIG ADVENTURE WEBSITE <br>
+                                <span>(Coming Soon)</span></p>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

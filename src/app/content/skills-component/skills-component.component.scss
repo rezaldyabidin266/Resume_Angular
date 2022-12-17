@@ -1,0 +1,71 @@
+.skills-container {
+    padding: 0 0 5rem 0;
+    .skills-judul {
+        h3 {
+            font-family: var(--rubik);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--warna-gelap);
+            margin-bottom: 20px;
+            margin-left: 14px;
+        }
+    }
+    .skills-box {
+        margin-top: 15px;
+        .skills-list {
+            .skills-subheader {
+                height: 0;
+                margin-top: 15px;
+                p {
+                    color: var(--warna-gelap);
+                    font-size: 17px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+            .skills-list-item {
+                height: auto;
+                margin-top: 5px;
+                margin-bottom: 8px;
+                .mat-icon {
+                    height: auto;
+                    width: auto;
+                }
+                .list-icon {
+                    font-size: 12px;
+                    margin-right: 10px;
+                    color: var(--warna-abu);
+                    // .mat-list-base .mat-list-item, .mat-list-base .mat-list-option
+                }
+                .list-skill {
+                    font-size: 14px;
+                    color: var(--warna-gelap);
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 599.98px) {
+    .skills-container {
+        padding: 0 0 5rem 0;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 959.98px) {
+    .skills-container {
+        padding: 0 0 5rem 0;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 1279.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1919.98px) {}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (min-width: 1920px) {}
